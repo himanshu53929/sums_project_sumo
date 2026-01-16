@@ -1,0 +1,19 @@
+<connections>
+    
+    <connection from="west_middle_road" to="middle_south_road" fromLane="0" toLane="0" tl="middle_junction" linkIndex="0" dir="r"/>
+    <connection from="west_middle_road" to="middle_east_road" fromLane="1" toLane="1" tl="middle_junction" linkIndex="1" dir="s"/>
+    <connection from="west_middle_road" to="middle_north_road" fromLane="2" toLane="2" tl="middle_junction" linkIndex="2" dir="l"/>
+
+    <connection from="north_middle_road" to="middle_west_road" fromLane="0" toLane="0" tl="middle_junction" linkIndex="3" dir="r"/>
+    <connection from="north_middle_road" to="middle_south_road" fromLane="1" toLane="1" tl="middle_junction" linkIndex="4" dir="s"/>
+    <connection from="north_middle_road" to="middle_east_road" fromLane="2" toLane="2" tl="middle_junction" linkIndex="5" dir="l"/>
+
+    <connection from="east_middle_road" to="middle_north_road" fromLane="0" toLane="0" tl="middle_junction" linkIndex="6" dir="r"/>
+    <connection from="east_middle_road" to="middle_west_road" fromLane="1" toLane="1" tl="middle_junction" linkIndex="7" dir="s"/>
+    <connection from="east_middle_road" to="middle_south_road" fromLane="2" toLane="2" tl="middle_junction" linkIndex="8" dir="l"/>
+
+    <connection from="south_middle_road" to="middle_east_road" fromLane="0" toLane="0" tl="middle_junction" linkIndex="9" dir="r"/>
+    <connection from="south_middle_road" to="middle_north_road" fromLane="1" toLane="1" tl="middle_junction" linkIndex="10" dir="s"/>
+    <connection from="south_middle_road" to="middle_west_road" fromLane="2" toLane="2" tl="middle_junction" linkIndex="11" dir="l"/>
+  
+</connections>

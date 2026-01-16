@@ -1,0 +1,18 @@
+<additional>
+    <tlLogic id = "middle_junction" type = "static" programID = "myProgram" offset = "0">
+
+        <phase duration = "30" state = "GGGrrGGrrrGGGrrGGrrr" />
+        <phase duration = "3"  state = "GGyrrGGrrrGGyrrGGrrr"/>
+
+        <phase duration = "30" state = "GGrrrGGGrrGGrrrGGGrr" />
+        <phase duration = "3"  state = "GGrrrGGyrrGGrrrGGyrr"/>
+
+        <phase duration = "15" state = "GGrrGGGrrrGGrrGGGrrr" />
+        <phase duration = "3"  state = "GGrryGGrrrGGrrGGyrrr"/>
+
+        <phase duration = "15" state = "GGrrrGGrrGGGrrrGGrrG" />
+        <phase duration = "3"  state = "GGrryGGrrrGGrryGGrrr"/>
+
+    </tlLogic>
+
+</additional>
