@@ -13,7 +13,7 @@
     </input>
 
     <time>
-        <step-length value="0.1"/>
+        <step-length value= "0.01"/>
     </time>
 
     <processing>
@@ -21,7 +21,7 @@
     </processing>
 
     <gui_only>
-        <delay value="200.00"/>
+        <delay value="1000"/>
     </gui_only>
 
 </sumoConfiguration>
