@@ -39,16 +39,34 @@ third_buffer = "GGrrrGGrrrGGyyyGGrrr"
 north_path = "GGrrrGGrrrGGrrrGGGGG"
 fourth_buffer = "GGrrrGGrrrGGrrrGGyyy"
 
-def allocate_time(number_of_vehicles):
+def first_allocate_time(number_of_vehicles):
     number_of_vehicles = sorted(number_of_vehicles, reverse = True)
     total_vehicles = sum(number_of_vehicles)
     cycle_time = 60
-    alloc_time_0 = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
-    alloc_time_1= (number_of_vehicles[1] / total_vehicles ) *  cycle_time
-    alloc_time_2 = (number_of_vehicles[2] / total_vehicles ) *  cycle_time
-    alloc_time_3 = (number_of_vehicles[3] / total_vehicles ) *  cycle_time
-    alloc_time_total = [alloc_time_0, alloc_time_1, alloc_time_2, alloc_time_3]
-    return alloc_time_total
+    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
+    return alloc_time
+
+def second_allocate_time(number_of_vehicles):
+    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
+    total_vehicles = sum(number_of_vehicles)
+    cycle_time = 60
+    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
+    return alloc_time
+
+
+def third_allocate_time(number_of_vehicles):
+    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
+    total_vehicles = sum(number_of_vehicles)
+    cycle_time = 60
+    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
+    return alloc_time
+
+def fourth_allocate_time(number_of_vehicles):
+    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
+    total_vehicles = sum(number_of_vehicles)
+    cycle_time = 60
+    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
+    return alloc_time
 
 def set_traffic_light():
     
