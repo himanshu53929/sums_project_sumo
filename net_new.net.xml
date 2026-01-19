@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-17T09:05:20.851834+05:45 by Eclipse SUMO netedit 1.25.0
+<!-- generated on 2026-01-19T06:35:13.874798+05:45 by Eclipse SUMO netedit 1.25.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumo-net-file value="C:\Users\lenovo\Desktop\SumsProject\net_new.net.xml"/>
+        <sumo-net-file value=".\net_new.net.xml"/>
     </input>
 
     <output>
-        <output-file value="C:\Users\lenovo\Desktop\SumsProject\net_new.net.xml"/>
+        <output-file value=".\net_new.net.xml"/>
     </output>
 
     <processing>
@@ -38,101 +38,101 @@
     <location netOffset="0.00,0.00" convBoundary="-163.66,-167.68,200.61,159.90" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
 
     <edge id=":middle_junction_0" function="internal">
-        <lane id=":middle_junction_0_0" index="0" speed="6.69" length="9.51" shape="28.47,5.20 25.89,5.57 24.04,6.67 22.91,8.50 22.51,11.07"/>
+        <lane id=":middle_junction_0_0" index="0" speed="7.46" length="11.48" shape="30.27,6.10 26.90,6.50 24.48,7.72 23.01,9.74 22.49,12.58"/>
     </edge>
     <edge id=":middle_junction_1" function="internal">
-        <lane id=":middle_junction_1_0" index="0" speed="13.89" length="27.50" shape="28.47,5.20 0.97,5.20"/>
-        <lane id=":middle_junction_1_1" index="1" speed="13.89" length="27.50" shape="28.47,2.00 0.97,2.00"/>
-        <lane id=":middle_junction_1_2" index="2" speed="13.89" length="27.50" shape="28.47,-1.20 0.97,-1.20"/>
+        <lane id=":middle_junction_1_0" index="0" speed="13.89" length="31.10" shape="30.27,6.10 -0.83,5.20"/>
+        <lane id=":middle_junction_1_1" index="1" speed="13.89" length="31.10" shape="30.27,2.00 -0.83,2.00"/>
+        <lane id=":middle_junction_1_2" index="2" speed="13.89" length="31.10" shape="30.27,-1.20 -0.83,-1.20"/>
     </edge>
     <edge id=":middle_junction_4" function="internal">
-        <lane id=":middle_junction_4_0" index="0" speed="10.34" length="5.00" shape="28.47,-1.20 23.51,-1.91"/>
+        <lane id=":middle_junction_4_0" index="0" speed="10.86" length="5.09" shape="30.27,-1.20 25.23,-1.91"/>
     </edge>
     <edge id=":middle_junction_20" function="internal">
-        <lane id=":middle_junction_20_0" index="0" speed="10.34" length="19.68" shape="23.51,-1.91 21.76,-2.16 17.00,-5.04 14.19,-9.85 13.33,-16.57"/>
+        <lane id=":middle_junction_20_0" index="0" speed="10.86" length="22.26" shape="25.23,-1.91 22.77,-2.25 17.45,-5.42 14.31,-10.69 13.35,-18.08"/>
     </edge>
     <edge id=":middle_junction_5" function="internal">
-        <lane id=":middle_junction_5_0" index="0" speed="6.47" length="9.03" shape="22.93,-16.42 23.24,-13.96 24.27,-12.21 26.01,-11.15 28.47,-10.80"/>
+        <lane id=":middle_junction_5_0" index="0" speed="7.24" length="10.96" shape="23.85,-17.92 24.21,-14.80 25.40,-12.58 27.42,-11.24 30.27,-10.80"/>
     </edge>
     <edge id=":middle_junction_6" function="internal">
-        <lane id=":middle_junction_6_0" index="0" speed="13.89" length="27.50" shape="22.93,-16.42 22.51,11.07"/>
-        <lane id=":middle_junction_6_1" index="1" speed="13.89" length="27.50" shape="19.73,-16.47 19.31,11.02"/>
-        <lane id=":middle_junction_6_2" index="2" speed="13.89" length="27.50" shape="16.53,-16.52 16.11,10.97"/>
+        <lane id=":middle_junction_6_0" index="0" speed="13.89" length="30.51" shape="23.85,-17.92 22.49,12.58"/>
+        <lane id=":middle_junction_6_1" index="1" speed="13.89" length="30.51" shape="19.75,-17.98 19.29,12.53"/>
+        <lane id=":middle_junction_6_2" index="2" speed="13.89" length="30.51" shape="16.55,-18.03 16.09,12.48"/>
     </edge>
     <edge id=":middle_junction_9" function="internal">
-        <lane id=":middle_junction_9_0" index="0" speed="10.48" length="5.03" shape="16.53,-16.52 15.74,-11.56"/>
+        <lane id=":middle_junction_9_0" index="0" speed="11.01" length="4.94" shape="16.55,-18.03 15.77,-13.15"/>
     </edge>
     <edge id=":middle_junction_21" function="internal">
-        <lane id=":middle_junction_21_0" index="0" speed="10.48" length="19.79" shape="15.74,-11.56 15.47,-9.82 12.52,-5.03 7.69,-2.16 0.97,-1.20"/>
+        <lane id=":middle_junction_21_0" index="0" speed="11.01" length="22.55" shape="15.77,-13.15 15.37,-10.67 12.08,-5.41 6.68,-2.25 -0.83,-1.20"/>
     </edge>
     <edge id=":middle_junction_10" function="internal">
-        <lane id=":middle_junction_10_0" index="0" speed="6.69" length="9.50" shape="0.97,-10.80 3.55,-11.17 5.40,-12.27 6.52,-14.10 6.93,-16.67"/>
+        <lane id=":middle_junction_10_0" index="0" speed="7.46" length="11.48" shape="-0.83,-11.70 2.54,-12.10 4.96,-13.32 6.43,-15.34 6.95,-18.18"/>
     </edge>
     <edge id=":middle_junction_11" function="internal">
-        <lane id=":middle_junction_11_0" index="0" speed="13.89" length="27.50" shape="0.97,-10.80 28.47,-10.80"/>
-        <lane id=":middle_junction_11_1" index="1" speed="13.89" length="27.50" shape="0.97,-7.60 28.47,-7.60"/>
-        <lane id=":middle_junction_11_2" index="2" speed="13.89" length="27.50" shape="0.97,-4.40 28.47,-4.40"/>
+        <lane id=":middle_junction_11_0" index="0" speed="13.89" length="31.10" shape="-0.83,-11.70 30.27,-10.80"/>
+        <lane id=":middle_junction_11_1" index="1" speed="13.89" length="31.10" shape="-0.83,-7.60 30.27,-7.60"/>
+        <lane id=":middle_junction_11_2" index="2" speed="13.89" length="31.10" shape="-0.83,-4.40 30.27,-4.40"/>
     </edge>
     <edge id=":middle_junction_14" function="internal">
-        <lane id=":middle_junction_14_0" index="0" speed="10.34" length="5.00" shape="0.97,-4.40 5.93,-3.69"/>
+        <lane id=":middle_junction_14_0" index="0" speed="10.86" length="5.09" shape="-0.83,-4.40 4.21,-3.69"/>
     </edge>
     <edge id=":middle_junction_22" function="internal">
-        <lane id=":middle_junction_22_0" index="0" speed="10.34" length="19.68" shape="5.93,-3.69 7.68,-3.44 12.44,-0.56 15.25,4.25 16.11,10.97"/>
+        <lane id=":middle_junction_22_0" index="0" speed="10.86" length="22.26" shape="4.21,-3.69 6.67,-3.35 11.99,-0.18 15.13,5.09 16.09,12.48"/>
     </edge>
     <edge id=":middle_junction_15" function="internal">
-        <lane id=":middle_junction_15_0" index="0" speed="6.47" length="9.03" shape="6.51,10.82 6.20,8.36 5.17,6.61 3.43,5.55 0.97,5.20"/>
+        <lane id=":middle_junction_15_0" index="0" speed="7.24" length="10.96" shape="5.59,12.32 5.23,9.20 4.04,6.98 2.02,5.64 -0.83,5.20"/>
     </edge>
     <edge id=":middle_junction_16" function="internal">
-        <lane id=":middle_junction_16_0" index="0" speed="13.89" length="27.50" shape="6.51,10.82 6.93,-16.67"/>
-        <lane id=":middle_junction_16_1" index="1" speed="13.89" length="27.50" shape="9.71,10.87 10.13,-16.62"/>
-        <lane id=":middle_junction_16_2" index="2" speed="13.89" length="27.50" shape="12.91,10.92 13.33,-16.57"/>
+        <lane id=":middle_junction_16_0" index="0" speed="13.89" length="30.51" shape="5.59,12.32 6.95,-18.18"/>
+        <lane id=":middle_junction_16_1" index="1" speed="13.89" length="30.51" shape="9.69,12.38 10.15,-18.13"/>
+        <lane id=":middle_junction_16_2" index="2" speed="13.89" length="30.51" shape="12.89,12.43 13.35,-18.08"/>
     </edge>
     <edge id=":middle_junction_19" function="internal">
-        <lane id=":middle_junction_19_0" index="0" speed="10.48" length="5.02" shape="12.91,10.92 13.69,5.96"/>
+        <lane id=":middle_junction_19_0" index="0" speed="11.01" length="4.94" shape="12.89,12.43 13.67,7.55"/>
     </edge>
     <edge id=":middle_junction_23" function="internal">
-        <lane id=":middle_junction_23_0" index="0" speed="10.48" length="19.79" shape="13.69,5.96 13.97,4.22 16.92,-0.57 21.75,-3.44 28.47,-4.40"/>
+        <lane id=":middle_junction_23_0" index="0" speed="11.01" length="22.55" shape="13.67,7.55 14.07,5.07 17.36,-0.19 22.76,-3.35 30.27,-4.40"/>
     </edge>
 
     <edge id="east_middle_road" from="east_junction" to="middle_junction" priority="-1" shape="100.61,-2.80 19.34,-2.80">
-        <lane id="east_middle_road_0" index="0" speed="13.89" length="172.14" shape="200.61,5.20 28.47,5.20"/>
-        <lane id="east_middle_road_1" index="1" speed="13.89" length="172.14" shape="200.61,2.00 28.47,2.00"/>
-        <lane id="east_middle_road_2" index="2" speed="13.89" length="172.14" shape="200.61,-1.20 28.47,-1.20"/>
+        <lane id="east_middle_road_0" index="0" speed="13.89" length="170.34" width="5.00" shape="200.61,6.10 30.27,6.10"/>
+        <lane id="east_middle_road_1" index="1" speed="13.89" length="170.34" shape="200.61,2.00 30.27,2.00"/>
+        <lane id="east_middle_road_2" index="2" speed="13.89" length="170.34" shape="200.61,-1.20 30.27,-1.20"/>
     </edge>
     <edge id="middle_east_road" from="middle_junction" to="east_junction" priority="-1" shape="19.34,-2.80 100.61,-2.80">
-        <lane id="middle_east_road_0" index="0" speed="13.89" length="172.14" shape="28.47,-10.80 200.61,-10.80"/>
-        <lane id="middle_east_road_1" index="1" speed="13.89" length="172.14" shape="28.47,-7.60 200.61,-7.60"/>
-        <lane id="middle_east_road_2" index="2" speed="13.89" length="172.14" shape="28.47,-4.40 200.61,-4.40"/>
+        <lane id="middle_east_road_0" index="0" speed="13.89" length="170.34" shape="30.27,-10.80 200.61,-10.80"/>
+        <lane id="middle_east_road_1" index="1" speed="13.89" length="170.34" shape="30.27,-7.60 200.61,-7.60"/>
+        <lane id="middle_east_road_2" index="2" speed="13.89" length="170.34" shape="30.27,-4.40 200.61,-4.40"/>
     </edge>
     <edge id="middle_north_road" from="middle_junction" to="north_junction" priority="-1" shape="14.71,-2.13 13.76,59.90">
-        <lane id="middle_north_road_0" index="0" speed="13.89" length="148.95" shape="22.51,11.07 20.23,160.00"/>
-        <lane id="middle_north_road_1" index="1" speed="13.89" length="148.95" shape="19.31,11.02 17.03,159.95"/>
-        <lane id="middle_north_road_2" index="2" speed="13.89" length="148.95" shape="16.11,10.97 13.83,159.90"/>
+        <lane id="middle_north_road_0" index="0" speed="13.89" length="147.44" shape="22.49,12.58 20.23,160.00"/>
+        <lane id="middle_north_road_1" index="1" speed="13.89" length="147.44" shape="19.29,12.53 17.03,159.95"/>
+        <lane id="middle_north_road_2" index="2" speed="13.89" length="147.44" shape="16.09,12.48 13.83,159.90"/>
     </edge>
     <edge id="middle_south_road" from="middle_junction" to="south_junction" priority="-1" shape="14.71,-2.13 15.71,-67.68">
-        <lane id="middle_south_road_0" index="0" speed="13.89" length="151.13" shape="6.93,-16.67 9.24,-167.78"/>
-        <lane id="middle_south_road_1" index="1" speed="13.89" length="151.13" shape="10.13,-16.62 12.44,-167.73"/>
-        <lane id="middle_south_road_2" index="2" speed="13.89" length="151.13" shape="13.33,-16.57 15.64,-167.68"/>
+        <lane id="middle_south_road_0" index="0" speed="13.89" length="149.62" shape="6.95,-18.18 9.24,-167.78"/>
+        <lane id="middle_south_road_1" index="1" speed="13.89" length="149.62" shape="10.15,-18.13 12.44,-167.73"/>
+        <lane id="middle_south_road_2" index="2" speed="13.89" length="149.62" shape="13.35,-18.08 15.64,-167.68"/>
     </edge>
     <edge id="middle_west_road" from="middle_junction" to="west_junction" priority="-1" shape="19.34,-2.80 -63.66,-2.80">
-        <lane id="middle_west_road_0" index="0" speed="13.89" length="164.63" shape="0.97,5.20 -163.66,5.20"/>
-        <lane id="middle_west_road_1" index="1" speed="13.89" length="164.63" shape="0.97,2.00 -163.66,2.00"/>
-        <lane id="middle_west_road_2" index="2" speed="13.89" length="164.63" shape="0.97,-1.20 -163.66,-1.20"/>
+        <lane id="middle_west_road_0" index="0" speed="13.89" length="162.83" shape="-0.83,5.20 -163.66,5.20"/>
+        <lane id="middle_west_road_1" index="1" speed="13.89" length="162.83" shape="-0.83,2.00 -163.66,2.00"/>
+        <lane id="middle_west_road_2" index="2" speed="13.89" length="162.83" shape="-0.83,-1.20 -163.66,-1.20"/>
     </edge>
     <edge id="north_middle_road" from="north_junction" to="middle_junction" priority="-1" shape="13.76,59.90 14.71,-2.13">
-        <lane id="north_middle_road_0" index="0" speed="13.89" length="148.95" shape="4.23,159.75 6.51,10.82"/>
-        <lane id="north_middle_road_1" index="1" speed="13.89" length="148.95" shape="7.43,159.80 9.71,10.87"/>
-        <lane id="north_middle_road_2" index="2" speed="13.89" length="148.95" shape="10.63,159.85 12.91,10.92"/>
+        <lane id="north_middle_road_0" index="0" speed="13.89" length="147.44" width="5.00" shape="3.33,159.74 5.59,12.32"/>
+        <lane id="north_middle_road_1" index="1" speed="13.89" length="147.44" shape="7.43,159.80 9.69,12.38"/>
+        <lane id="north_middle_road_2" index="2" speed="13.89" length="147.44" shape="10.63,159.85 12.89,12.43"/>
     </edge>
     <edge id="south_middle_road" from="south_junction" to="middle_junction" priority="-1" shape="15.71,-67.68 14.71,-2.13">
-        <lane id="south_middle_road_0" index="0" speed="13.89" length="151.13" shape="25.23,-167.53 22.93,-16.42"/>
-        <lane id="south_middle_road_1" index="1" speed="13.89" length="151.13" shape="22.03,-167.58 19.73,-16.47"/>
-        <lane id="south_middle_road_2" index="2" speed="13.89" length="151.13" shape="18.84,-167.63 16.53,-16.52"/>
+        <lane id="south_middle_road_0" index="0" speed="13.89" length="149.62" width="5.00" shape="26.13,-167.52 23.85,-17.92"/>
+        <lane id="south_middle_road_1" index="1" speed="13.89" length="149.62" shape="22.03,-167.58 19.75,-17.98"/>
+        <lane id="south_middle_road_2" index="2" speed="13.89" length="149.62" shape="18.84,-167.63 16.55,-18.03"/>
     </edge>
     <edge id="west_middle_road" from="west_junction" to="middle_junction" priority="-1" length="150.00" shape="-63.66,-2.80 19.34,-2.80">
-        <lane id="west_middle_road_0" index="0" speed="13.89" length="150.00" shape="-163.66,-10.80 0.97,-10.80"/>
-        <lane id="west_middle_road_1" index="1" speed="13.89" length="150.00" shape="-163.66,-7.60 0.97,-7.60"/>
-        <lane id="west_middle_road_2" index="2" speed="13.89" length="150.00" shape="-163.66,-4.40 0.97,-4.40"/>
+        <lane id="west_middle_road_0" index="0" speed="13.89" length="150.00" width="5.00" shape="-163.66,-11.70 -0.83,-11.70"/>
+        <lane id="west_middle_road_1" index="1" speed="13.89" length="150.00" shape="-163.66,-7.60 -0.83,-7.60"/>
+        <lane id="west_middle_road_2" index="2" speed="13.89" length="150.00" shape="-163.66,-4.40 -0.83,-4.40"/>
     </edge>
 
     <tlLogic id="middle_junction" type="static" programID="0" offset="0">
@@ -143,7 +143,7 @@
     </tlLogic>
 
     <junction id="east_junction" type="dead_end" x="200.61" y="-2.80" incLanes="middle_east_road_0 middle_east_road_1 middle_east_road_2" intLanes="" shape="200.61,-2.80 200.61,-12.40 200.61,-2.80"/>
-    <junction id="middle_junction" type="traffic_light" x="17.03" y="-2.47" incLanes="east_middle_road_0 east_middle_road_1 east_middle_road_2 south_middle_road_0 south_middle_road_1 south_middle_road_2 west_middle_road_0 west_middle_road_1 west_middle_road_2 north_middle_road_0 north_middle_road_1 north_middle_road_2" intLanes=":middle_junction_0_0 :middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_20_0 :middle_junction_5_0 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_21_0 :middle_junction_10_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_22_0 :middle_junction_15_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_23_0" shape="28.47,6.80 28.47,-12.40 26.25,-12.84 25.48,-13.40 24.94,-14.18 24.62,-15.18 24.53,-16.40 5.33,-16.69 4.82,-14.31 4.21,-13.47 3.36,-12.88 2.29,-12.52 0.97,-12.40 0.97,6.80 3.19,7.24 3.96,7.80 4.50,8.58 4.82,9.58 4.91,10.80 24.11,11.09 24.62,8.71 25.23,7.87 26.08,7.28 27.15,6.92">
+    <junction id="middle_junction" type="traffic_light" x="17.03" y="-2.47" incLanes="east_middle_road_0 east_middle_road_1 east_middle_road_2 south_middle_road_0 south_middle_road_1 south_middle_road_2 west_middle_road_0 west_middle_road_1 west_middle_road_2 north_middle_road_0 north_middle_road_1 north_middle_road_2" intLanes=":middle_junction_0_0 :middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_20_0 :middle_junction_5_0 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_21_0 :middle_junction_10_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_22_0 :middle_junction_15_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_23_0" shape="30.27,8.60 30.27,-12.40 28.06,-13.01 27.29,-13.77 26.75,-14.84 26.44,-16.21 26.35,-17.88 5.35,-18.20 4.64,-15.98 3.78,-15.20 2.58,-14.64 1.04,-14.31 -0.83,-14.20 -0.83,6.80 1.38,7.41 2.15,8.17 2.69,9.23 3.00,10.60 3.09,12.28 24.09,12.60 24.80,10.38 25.66,9.60 26.86,9.04 28.40,8.71">
         <request index="0"  response="00000000000000000000" foes="00000000000111000000" cont="0"/>
         <request index="1"  response="10000000000000000000" foes="11111100001111000000" cont="0"/>
         <request index="2"  response="10000000000000000000" foes="11111100001111000000" cont="0"/>
@@ -169,10 +169,10 @@
     <junction id="south_junction" type="dead_end" x="15.71" y="-167.68" incLanes="middle_south_road_0 middle_south_road_1 middle_south_road_2" intLanes="" shape="17.24,-167.66 7.64,-167.80 17.24,-167.66"/>
     <junction id="west_junction" type="dead_end" x="-163.66" y="-2.80" incLanes="middle_west_road_0 middle_west_road_1 middle_west_road_2" intLanes="" shape="-163.66,-2.80 -163.66,6.80 -163.66,-2.80"/>
 
-    <junction id=":middle_junction_20_0" type="internal" x="23.51" y="-1.91" incLanes=":middle_junction_4_0 west_middle_road_0 west_middle_road_1 west_middle_road_2" intLanes=":middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_9_0 :middle_junction_10_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_19_0"/>
-    <junction id=":middle_junction_21_0" type="internal" x="15.74" y="-11.56" incLanes=":middle_junction_9_0 north_middle_road_0 north_middle_road_1 north_middle_road_2" intLanes=":middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_4_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_14_0 :middle_junction_15_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2"/>
-    <junction id=":middle_junction_22_0" type="internal" x="5.93" y="-3.69" incLanes=":middle_junction_14_0 east_middle_road_0 east_middle_road_1 east_middle_road_2" intLanes=":middle_junction_0_0 :middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_9_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_19_0"/>
-    <junction id=":middle_junction_23_0" type="internal" x="13.69" y="5.96" incLanes=":middle_junction_19_0 south_middle_road_0 south_middle_road_1 south_middle_road_2" intLanes=":middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_4_0 :middle_junction_5_0 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_14_0"/>
+    <junction id=":middle_junction_20_0" type="internal" x="25.23" y="-1.91" incLanes=":middle_junction_4_0 west_middle_road_0 west_middle_road_1 west_middle_road_2" intLanes=":middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_9_0 :middle_junction_10_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_19_0"/>
+    <junction id=":middle_junction_21_0" type="internal" x="15.77" y="-13.15" incLanes=":middle_junction_9_0 north_middle_road_0 north_middle_road_1 north_middle_road_2" intLanes=":middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_4_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_14_0 :middle_junction_15_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2"/>
+    <junction id=":middle_junction_22_0" type="internal" x="4.21" y="-3.69" incLanes=":middle_junction_14_0 east_middle_road_0 east_middle_road_1 east_middle_road_2" intLanes=":middle_junction_0_0 :middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_9_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_19_0"/>
+    <junction id=":middle_junction_23_0" type="internal" x="13.67" y="7.55" incLanes=":middle_junction_19_0 south_middle_road_0 south_middle_road_1 south_middle_road_2" intLanes=":middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_4_0 :middle_junction_5_0 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_14_0"/>
 
     <connection from="east_middle_road" to="middle_north_road" fromLane="0" toLane="0" via=":middle_junction_0_0" tl="middle_junction" linkIndex="0" dir="r" state="O"/>
     <connection from="east_middle_road" to="middle_west_road" fromLane="0" toLane="0" via=":middle_junction_1_0" tl="middle_junction" linkIndex="1" dir="s" state="O"/>
