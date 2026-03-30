@@ -21,10 +21,6 @@ def lock_lane_changes():
     for veh_id in traci.vehicle.getIDList():
         traci.vehicle.setLaneChangeMode(veh_id, 0)
 
-# # Duration
-# small_traffic = "10"
-# medium_traffic = "20"
-# large_traffic = "30"
 
 # State
 east_path = "GGGGGGGrrrGGrrrGGrrr"
@@ -39,47 +35,10 @@ third_buffer = "GGrrrGGrrrGGyyyGGrrr"
 north_path = "GGrrrGGrrrGGrrrGGGGG"
 fourth_buffer = "GGrrrGGrrrGGrrrGGyyy"
 
-def first_allocate_time(number_of_vehicles):
-    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
-    total_vehicles = sum(number_of_vehicles)
-    cycle_time = 60
-    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
-    return alloc_time
 
-def second_allocate_time(number_of_vehicles):
-    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
-    total_vehicles = sum(number_of_vehicles)
-    cycle_time = 60
-    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
-    return alloc_time
-
-
-def third_allocate_time(number_of_vehicles):
-    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
-    total_vehicles = sum(number_of_vehicles)
-    cycle_time = 60
-    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
-    return alloc_time
-
-def fourth_allocate_time(number_of_vehicles):
-    number_of_vehicles = sorted(number_of_vehicles, reverse = True)
-    total_vehicles = sum(number_of_vehicles)
-    cycle_time = 60
-    alloc_time = (number_of_vehicles[0] / total_vehicles ) *  cycle_time
-    return alloc_time
-
-def set_traffic_light():
-    
-
-# vertical_diagonal_lane = "GGrrrGGrrGGGrrrGGrrG"
-# fourth_buffer = "GGrryGGrrrGGrryGGrrr"
-
-# # List of count of vehicles which comes from yolo model
-# traffic_count = []
 
 tl_id = "middle_junction"
-# previous_state = traci.trafficlight.getRedYellowGreenState(tl_id)
-# print("Initial traffic light state of ", tl_id, "is ", previous_state)
+
 
 while traci.simulation.getMinExpectedNumber() > 0:
     traci.simulationStep()
@@ -102,12 +61,5 @@ while traci.simulation.getMinExpectedNumber() > 0:
 
     lock_lane_changes()
 
-    # current_state = traci.trafficlight.getRedYellowGreenState(tl_id)
-
-    # if(previous_state != current_state):
-    #     phase_index = traci.trafficlight.getPhase(tl_id)
-    #     phase_duration = traci.trafficlight.getPhaseDuration(tl_id)
-    #     print(f"Current traffic light state of {tl_id} is {current_state} it has phase index of {phase_index} and it has phase duration of {phase_duration}")
-    #     previous_state = current_state
 
 traci.close()

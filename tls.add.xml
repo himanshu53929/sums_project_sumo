@@ -2,25 +2,25 @@
     <tlLogic id = "middle_junction" type = "static" programID = "myProgram" offset = "0">
 
         <!-- Opens east paths -->
-        <phase duration = "30" state = "GGGGGGGrrrGGrrrGGrrr" />
-        <phase duration = "3"  state = "GGyyyGGrrrGGrrrGGrrr"/>
-        <phase duration = "2"  state = "GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration = "10" state = "GGGGGGGrrrGGrrrGGrrr" />
+        <phase duration = "0.5"  state = "GGyyyGGrrrGGrrrGGrrr"/>
+        <phase duration = "1"  state = "GGrrrGGrrrGGrrrGGrrr"/>
         
 
         <!-- Opens south pahts -->
-        <phase duration = "30" state = "GGrrrGGGGGGGrrrGGrrr" />
-        <phase duration = "3"  state = "GGrrrGGyyyGGrrrGGrrr"/>
-        <phase duration = "2"  state = "GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration = "10" state = "GGrrrGGGGGGGrrrGGrrr" />
+        <phase duration = "0.5"  state = "GGrrrGGyyyGGrrrGGrrr"/>
+        <phase duration = "1"  state = "GGrrrGGrrrGGrrrGGrrr"/>
 
         <!-- Opens west paths -->
-        <phase duration = "30" state = "GGrrrGGrrrGGGGGGGrrr" />
-        <phase duration = "3"  state = "GGrrrGGrrrGGyyyGGrrr"/>
-        <phase duration = "2"  state = "GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration = "10" state = "GGrrrGGrrrGGGGGGGrrr" />
+        <phase duration = "0.5"  state = "GGrrrGGrrrGGyyyGGrrr"/>
+        <phase duration = "1"  state = "GGrrrGGrrrGGrrrGGrrr"/>
         
         <!-- Opens north paths -->
-        <phase duration = "30" state = "GGrrrGGrrrGGrrrGGGGG" />
-        <phase duration = "3"  state = "GGrrrGGrrrGGrrrGGyyy"/>
-        <phase duration = "2"  state = "GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration = "10" state = "GGrrrGGrrrGGrrrGGGGG" />
+        <phase duration = "0.5"  state = "GGrrrGGrrrGGrrrGGyyy"/>
+        <phase duration = "1"  state = "GGrrrGGrrrGGrrrGGrrr"/>
     </tlLogic>
 
 </additional>

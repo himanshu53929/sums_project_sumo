@@ -8,7 +8,7 @@
     <input>
         <net-file value="net_new.net.xml"/>
         <route-files value="new.rou.xml"/>
-        <additional-files value="tls.add.xml"/>
+        <!-- <additional-files value="tls.add.xml"/> -->
         <junction-taz value="true"/>
     </input>
 
@@ -21,7 +21,7 @@
     </processing>
 
     <gui_only>
-        <delay value="100"/>
+        <delay value="1000"/>
     </gui_only>
 
 </sumoConfiguration>

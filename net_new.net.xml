@@ -1,38 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-19T06:35:13.874798+05:45 by Eclipse SUMO netedit 1.25.0
-<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
-
-    <input>
-        <sumo-net-file value=".\net_new.net.xml"/>
-    </input>
-
-    <output>
-        <output-file value=".\net_new.net.xml"/>
-    </output>
-
-    <processing>
-        <geometry.min-radius.fix.railways value="false"/>
-        <geometry.avoid-overlap value="false"/>
-        <geometry.max-grade.fix value="false"/>
-        <offset.disable-normalization value="true"/>
-        <lefthand value="0"/>
-    </processing>
-
-    <junctions>
-        <no-turnarounds value="true"/>
-        <junctions.corner-detail value="5"/>
-        <junctions.limit-turn-speed value="5.50"/>
-        <rectangular-lane-cut value="0"/>
-    </junctions>
-
-    <pedestrian>
-        <walkingareas value="0"/>
-    </pedestrian>
-
-</neteditConfiguration>
--->
-
 <net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
 
     <location netOffset="0.00,0.00" convBoundary="-163.66,-167.68,200.61,159.90" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
@@ -135,12 +102,22 @@
         <lane id="west_middle_road_2" index="2" speed="13.89" length="150.00" shape="-163.66,-4.40 -0.83,-4.40"/>
     </edge>
 
+
     <tlLogic id="middle_junction" type="static" programID="0" offset="0">
-        <phase duration="42" state="GGGGgrrrrrGGGGgrrrrr"/>
-        <phase duration="3"  state="yyyyyrrrrryyyyyrrrrr"/>
-        <phase duration="42" state="rrrrrGGGGgrrrrrGGGGg"/>
-        <phase duration="3"  state="rrrrryyyyyrrrrryyyyy"/>
+        <phase duration="30" state="GGGGGGGrrrGGrrrGGrrr"/>
+        <phase duration="3"  state="GGyyyGGrrrGGrrrGGrrr"/>
+        <phase duration="2"  state="GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration="30" state="GGrrrGGGGGGGrrrGGrrr"/>
+        <phase duration="3"  state="GGrrrGGyyyGGrrrGGrrr"/>
+        <phase duration="2"  state="GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration="30" state="GGrrrGGrrrGGGGGGGrrr"/>
+        <phase duration="3"  state="GGrrrGGrrrGGyyyGGrrr"/>
+        <phase duration="2"  state="GGrrrGGrrrGGrrrGGrrr"/>
+        <phase duration="30" state="GGrrrGGrrrGGrrrGGGGG"/>
+        <phase duration="3"  state="GGrrrGGrrrGGrrrGGyyy"/>
+        <phase duration="2"  state="GGrrrGGrrrGGrrrGGrrr"/>
     </tlLogic>
+
 
     <junction id="east_junction" type="dead_end" x="200.61" y="-2.80" incLanes="middle_east_road_0 middle_east_road_1 middle_east_road_2" intLanes="" shape="200.61,-2.80 200.61,-12.40 200.61,-2.80"/>
     <junction id="middle_junction" type="traffic_light" x="17.03" y="-2.47" incLanes="east_middle_road_0 east_middle_road_1 east_middle_road_2 south_middle_road_0 south_middle_road_1 south_middle_road_2 west_middle_road_0 west_middle_road_1 west_middle_road_2 north_middle_road_0 north_middle_road_1 north_middle_road_2" intLanes=":middle_junction_0_0 :middle_junction_1_0 :middle_junction_1_1 :middle_junction_1_2 :middle_junction_20_0 :middle_junction_5_0 :middle_junction_6_0 :middle_junction_6_1 :middle_junction_6_2 :middle_junction_21_0 :middle_junction_10_0 :middle_junction_11_0 :middle_junction_11_1 :middle_junction_11_2 :middle_junction_22_0 :middle_junction_15_0 :middle_junction_16_0 :middle_junction_16_1 :middle_junction_16_2 :middle_junction_23_0" shape="30.27,8.60 30.27,-12.40 28.06,-13.01 27.29,-13.77 26.75,-14.84 26.44,-16.21 26.35,-17.88 5.35,-18.20 4.64,-15.98 3.78,-15.20 2.58,-14.64 1.04,-14.31 -0.83,-14.20 -0.83,6.80 1.38,7.41 2.15,8.17 2.69,9.23 3.00,10.60 3.09,12.28 24.09,12.60 24.80,10.38 25.66,9.60 26.86,9.04 28.40,8.71">
@@ -219,5 +196,8 @@
     <connection from=":middle_junction_16" to="middle_south_road" fromLane="2" toLane="2" dir="s" state="M"/>
     <connection from=":middle_junction_19" to="middle_east_road" fromLane="0" toLane="2" via=":middle_junction_23_0" dir="l" state="m"/>
     <connection from=":middle_junction_23" to="middle_east_road" fromLane="0" toLane="2" dir="l" state="M"/>
+
+
+
 
 </net>

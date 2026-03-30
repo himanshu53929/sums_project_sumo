@@ -6,87 +6,176 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <!-- VTypes -->
     <vType id="bike" vClass="motorcycle"/>
-    <vType id="taxi" vClass="taxi"/>
+    <vType id="car" vClass="passenger" guiShape="passenger"/>
     <vType id="truck" vClass="truck"/>
     <vType id="van" vClass="hov" guiShape="delivery"/>
 
+
     <!-- Vehicles, persons and containers (sorted by depart) -->
 
+<!--
+        Traffic composition based on Nepal traffic surveys:
+      - Motorcycle/bike: ~60% of urban traffic
+      - Car (default):   ~20%
+      - Microbus/van:    ~10%
+      - Truck:           ~5%
+
+      Side road has 1/2 traffic of Main road
+      Normal time traffic is 1/3 of peak time
+-->
+
+
+<!--Normal Time-->
     <!-- Vehicles from west -->
     <!-- Lane 2 -->
-    <flow id="f_0" type="bike" begin="0.00" end="3600.00" probability="0.05" departLane="2" from="west_middle_road" to="middle_north_road"/>
-    <flow id="f_1" type="van" begin="0.00" end="3600.00" probability="0.05" departLane="2" from="west_middle_road" to="middle_north_road"/>
-    <flow id="f_2" type="truck" begin="0.00" end="3600.00" probability="0.05" departLane="2" departSpeed="1.00" from="west_middle_road" to="middle_north_road"/>
-    <flow id="f_3" begin="0.00" end="3600.00" probability="0.05" departLane = "2" from="west_middle_road" to="middle_north_road"/>
-    
+    <flow id="f_0" type="bike"     begin="0.00"     end="30.00"    probability="0.2"       departLane="2" from="west_middle_road" to="middle_north_road"/>
+    <flow id="f_1" type="van"      begin="0.00"     end="30.00"    probability="0.033"     departLane="2" from="west_middle_road" to="middle_north_road"/>
+    <flow id="f_2" type="truck"    begin="0.00"     end="30.00"    probability="0.016"     departLane="2" departSpeed="1.00" from="west_middle_road" to="middle_north_road"/>
+    <flow id="f_3" type="car"      begin="0.00"     end="30.00"    probability="0.067"     departLane = "2" from="west_middle_road" to="middle_north_road"/>
     <!-- Lane 1 -->
-    <flow id="f_4" type="bike" begin="0.00" end="3600.00" probability="0.05" departLane="1" from="west_middle_road" to="middle_east_road"/>
-    <flow id="f_5" type="van" begin="0.00" end="3600.00" probability="0.05" departLane="1" from="west_middle_road" to="middle_east_road"/>
-    <flow id="f_6" type="truck" begin="0.00" end="3600.00" probability="0.05" departLane="1" departSpeed="1.00" from="west_middle_road" to="middle_east_road"/>
-    <flow id="f_7" begin="0.00" end="3600.00" probability="0.05" departLane = "1" from="west_middle_road" to="middle_east_road"/>
-    
+    <flow id="f_4" type="bike"     begin="0.00"     end="30.00"    probability="0.2"     departLane="1" from="west_middle_road" to="middle_east_road"/>
+    <flow id="f_5" type="van"      begin="0.00"     end="30.00"    probability="0.033"     departLane="1" from="west_middle_road" to="middle_east_road"/>
+    <flow id="f_6" type="truck"    begin="0.00"     end="30.00"    probability="0.016"     departLane="1" departSpeed="1.00" from="west_middle_road" to="middle_east_road"/>
+    <flow id="f_7" type="car"      begin="0.00"     end="30.00"    probability="0.067"     departLane = "1" from="west_middle_road" to="middle_east_road"/>
     <!-- Lane 0 -->
-    <flow id="f_8" type="bike" begin="0.00" end="3600.00" probability="0.05" departLane="0" from="west_middle_road" to="middle_south_road"/>
-    <flow id="f_9" type="van" begin="0.00" end="3600.00" probability="0.05" departLane="0" from="west_middle_road" to="middle_south_road"/>
-    <flow id="f_10" type="truck" begin="0.00" end="3600.00" probability="0.05" departLane="0" departSpeed="1.00" from="west_middle_road" to="middle_south_road"/>
-    <flow id="f_11" begin="0.00" end="3600.00" probability="0.05" departLane = "0" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_8" type="bike"     begin="0.00"     end="30.00"    probability="0.2"     departLane="0" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_9" type="van"      begin="0.00"     end="30.00"    probability="0.033"     departLane="0" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_10" type="truck"   begin="0.00"     end="30.00"    probability="0.016"     departLane="0" departSpeed="1.00" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_11" type="car"     begin="0.00"     end="30.00"    probability="0.067"     departLane = "0" from="west_middle_road" to="middle_south_road"/>
     
 
         <!-- Vehicles from north -->
     <!-- Lane 2 -->
-    <flow id="f_12" type="bike" begin="0.00" end="3600.00" probability="0.005" departLane="2" from="north_middle_road" to="middle_east_road"/>
-    <flow id="f_13" type="van" begin="0.00" end="3600.00" probability="0.005" departLane="2" from="north_middle_road" to="middle_east_road"/>
-    <flow id="f_14" type="truck" begin="0.00" end="3600.00" probability="0.005" departLane="2" departSpeed="1.00" from="north_middle_road" to="middle_east_road"/>
-    <flow id="f_15" begin="0.00" end="3600.00" probability="0.005" departLane = "2" from="north_middle_road" to="middle_east_road"/>
-    
-    <!-- Lane 1 -->
-    <flow id="f_16" type="bike" begin="0.00" end="3600.00" probability="0.005" departLane="1" from="north_middle_road" to="middle_south_road"/>
-    <flow id="f_17" type="van" begin="0.00" end="3600.00" probability="0.005" departLane="1" from="north_middle_road" to="middle_south_road"/>
-    <flow id="f_18" type="truck" begin="0.00" end="3600.00" probability="0.005" departLane="1" departSpeed="1.00" from="north_middle_road" to="middle_south_road"/>
-    <flow id="f_19" begin="0.00" end="3600.00" probability="0.005" departLane = "1" from="north_middle_road" to="middle_south_road"/>
-    
-    <!-- Lane 0 -->
-    <flow id="f_20" type="bike" begin="0.00" end="3600.00" probability="0.005" departLane="0" from="north_middle_road" to="middle_west_road"/>
-    <flow id="f_21" type="van" begin="0.00" end="3600.00" probability="0.005" departLane="0" from="north_middle_road" to="middle_west_road"/>
-    <flow id="f_22" type="truck" begin="0.00" end="3600.00" probability="0.005" departLane="0" departSpeed="1.00" from="north_middle_road" to="middle_west_road"/>
-    <flow id="f_23" begin="0.00" end="3600.00" probability="0.005" departLane = "0" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_12" type="bike"    begin="0.00"     end="30.00"   probability="0.1"      departLane="2" from="north_middle_road" to="middle_east_road"/>
+    <flow id="f_13" type="van"     begin="0.00"     end="30.00"   probability="0.016"      departLane="2" from="north_middle_road" to="middle_east_road"/>
+    <flow id="f_14" type="truck"   begin="0.00"     end="30.00"   probability="0.0083"      departLane="2" departSpeed="1.00" from="north_middle_road" to="middle_east_road"/>
+    <flow id="f_15" type="car"     begin="0.00"     end="30.00"   probability="0.03"      departLane = "2" from="north_middle_road" to="middle_east_road"/>
+
+    <!-- Lane 1 -->     
+    <flow id="f_16" type="bike"    begin="0.00"     end="30.00"   probability="0.1"      departLane="1" from="north_middle_road" to="middle_south_road"/>
+    <flow id="f_17" type="van"     begin="0.00"     end="30.00"   probability="0.016"      departLane="1" from="north_middle_road" to="middle_south_road"/>
+    <flow id="f_18" type="truck"   begin="0.00"     end="30.00"   probability="0.0083"      departLane="1" departSpeed="1.00" from="north_middle_road" to="middle_south_road"/>
+    <flow id="f_19" type="car"     begin="0.00"     end="30.00"   probability="0.03"      departLane = "1" from="north_middle_road" to="middle_south_road"/>
+
+    <!-- Lane 0 -->     
+    <flow id="f_20" type="bike"    begin="0.00"     end="30.00"   probability="0.01"      departLane="0" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_21" type="van"     begin="0.00"     end="30.00"   probability="0.016"      departLane="0" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_22" type="truck"   begin="0.00"     end="30.00"   probability="0.0083"      departLane="0" departSpeed="1.00" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_23" type="car"     begin="0.00"     end="30.00"   probability="0.03"      departLane = "0" from="north_middle_road" to="middle_west_road"/>
  
      <!-- Vehicles from east -->
     <!-- Lane 2 -->
-    <flow id="f_24" type="bike" begin="0.00" end="3600.00" probability="0.05" departLane="2" from="east_middle_road" to="middle_south_road"/>
-    <flow id="f_25" type="van" begin="0.00" end="3600.00" probability="0.05" departLane="2" from="east_middle_road" to="middle_south_road"/>
-    <flow id="f_26" type="truck" begin="0.00" end="3600.00" probability="0.05" departLane="2" departSpeed="1.00" from="east_middle_road" to="middle_south_road"/>
-    <flow id="f_27" begin="0.00" end="3600.00" probability="0.05" departLane = "2" from="east_middle_road" to="middle_south_road"/>
-    
-    <!-- Lane 1 -->
-    <flow id="f_28" type="bike" begin="0.00" end="3600.00" probability="0.05" departLane="1" from="east_middle_road" to="middle_west_road"/>
-    <flow id="f_29" type="van" begin="0.00" end="3600.00" probability="0.05" departLane="1" from="east_middle_road" to="middle_west_road"/>
-    <flow id="f_30" type="truck" begin="0.00" end="3600.00" probability="0.05" departLane="1" departSpeed="1.00" from="east_middle_road" to="middle_west_road"/>
-    <flow id="f_31" begin="0.00" end="3600.00" probability="0.05" departLane = "1" from="east_middle_road" to="middle_west_road"/>
-    
-    <!-- Lane 0 -->
-    <flow id="f_32" type="bike" begin="0.00" end="3600.00" probability="0.05" departLane="0" from="east_middle_road" to="middle_north_road"/>
-    <flow id="f_33" type="van" begin="0.00" end="3600.00" probability="0.05" departLane="0" from="east_middle_road" to="middle_north_road"/>
-    <flow id="f_34" type="truck" begin="0.00" end="3600.00" probability="0.05" departLane="0" departSpeed="1.00" from="east_middle_road" to="middle_north_road"/>
-    <flow id="f_35" begin="0.00" end="3600.00" probability="0.05" departLane = "0" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_24" type="bike"    begin="0.00"     end="30.00"   probability="0.2"      departLane="2" from="east_middle_road" to="middle_south_road"/>
+    <flow id="f_25" type="van"     begin="0.00"     end="30.00"   probability="0.033"      departLane="2" from="east_middle_road" to="middle_south_road"/>
+    <flow id="f_26" type="truck"   begin="0.00"     end="30.00"   probability="0.016"      departLane="2" departSpeed="1.00" from="east_middle_road" to="middle_south_road"/>
+    <flow id="f_27" type="car"     begin="0.00"     end="30.00"   probability="0.067"      departLane = "2" from="east_middle_road" to="middle_south_road"/>
+
+    <!-- Lane 1 -->     
+    <flow id="f_28" type="bike"    begin="0.00"     end="30.00"   probability="0.2"      departLane="1" from="east_middle_road" to="middle_west_road"/>
+    <flow id="f_29" type="van"     begin="0.00"     end="30.00"   probability="0.033"      departLane="1" from="east_middle_road" to="middle_west_road"/>
+    <flow id="f_30" type="truck"   begin="0.00"     end="30.00"   probability="0.016"      departLane="1" departSpeed="1.00" from="east_middle_road" to="middle_west_road"/>
+    <flow id="f_31" type="car"     begin="0.00"     end="30.00"   probability="0.067"      departLane = "1" from="east_middle_road" to="middle_west_road"/>
+
+    <!-- Lane 0 -->     
+    <flow id="f_32" type="bike"    begin="0.00"     end="30.00"   probability="0.2"      departLane="0" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_33" type="van"     begin="0.00"     end="30.00"   probability="0.033"      departLane="0" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_34" type="truck"   begin="0.00"     end="30.00"   probability="0.016"      departLane="0" departSpeed="1.00" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_35" type="car"     begin="0.00"     end="30.00"   probability="0.067"      departLane = "0" from="east_middle_road" to="middle_north_road"/>
  
      <!-- Vehicles from south -->
     <!-- Lane 2 -->
-    <flow id="f_36" type="bike" begin="0.00" end="3600.00" probability="0.005" departLane="2" from="south_middle_road" to="middle_west_road"/>
-    <flow id="f_37" type="van" begin="0.00" end="3600.00" probability="0.005" departLane="2" from="south_middle_road" to="middle_west_road"/>
-    <flow id="f_38" type="truck" begin="0.00" end="3600.00" probability="0.005" departLane="2" departSpeed="1.00" from="south_middle_road" to="middle_west_road"/>
-    <flow id="f_39" begin="0.00" end="3600.00" probability="0.005" departLane = "2" from="south_middle_road" to="middle_west_road"/>
-    
-    <!-- Lane 1 -->
-    <flow id="f_40" type="bike" begin="0.00" end="3600.00" probability="0.005" departLane="1" from="south_middle_road" to="middle_north_road"/>
-    <flow id="f_41" type="van" begin="0.00" end="3600.00" probability="0.005" departLane="1" from="south_middle_road" to="middle_north_road"/>
-    <flow id="f_42" type="truck" begin="0.00" end="3600.00" probability="0.005" departLane="1" departSpeed="1.00" from="south_middle_road" to="middle_north_road"/>
-    <flow id="f_43" begin="0.00" end="3600.00" probability="0.005" departLane = "1" from="south_middle_road" to="middle_north_road"/>
-    
-    <!-- Lane 0 -->
-    <flow id="f_44" type="bike" begin="0.00" end="3600.00" probability="0.005" departLane="0" from="south_middle_road" to="middle_east_road"/>
-    <flow id="f_45" type="van" begin="0.00" end="3600.00" probability="0.005" departLane="0" from="south_middle_road" to="middle_east_road"/>
-    <flow id="f_46" type="truck" begin="0.00" end="3600.00" probability="0.005" departLane="0" departSpeed="1.00" from="south_middle_road" to="middle_east_road"/>
-    <flow id="f_47" begin="0.00" end="3600.00" probability="0.005" departLane = "0" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_36" type="bike"    begin="0.00"     end="30.00"   probability="0.1"     departLane="2" from="south_middle_road" to="middle_west_road"/>
+    <flow id="f_37" type="van"     begin="0.00"     end="30.00"   probability="0.016"     departLane="2" from="south_middle_road" to="middle_west_road"/>
+    <flow id="f_38" type="truck"   begin="0.00"     end="30.00"   probability="0.0083"     departLane="2" departSpeed="1.00" from="south_middle_road" to="middle_west_road"/>
+    <flow id="f_39" type="car"     begin="0.00"     end="30.00"   probability="0.03"     departLane = "2" from="south_middle_road" to="middle_west_road"/>
+
+    <!-- Lane 1 --> 
+    <flow id="f_40" type="bike"    begin="0.00"     end="30.00"   probability="0.1"     departLane="1" from="south_middle_road" to="middle_north_road"/>
+    <flow id="f_41" type="van"     begin="0.00"     end="30.00"   probability="0.016"     departLane="1" from="south_middle_road" to="middle_north_road"/>
+    <flow id="f_42" type="truck"   begin="0.00"     end="30.00"   probability="0.0083"     departLane="1" departSpeed="1.00" from="south_middle_road" to="middle_north_road"/>
+    <flow id="f_43" type="car"     begin="0.00"     end="30.00"   probability="0.03"     departLane = "1" from="south_middle_road" to="middle_north_road"/>
+
+    <!-- Lane 0 --> 
+    <flow id="f_44" type="bike"    begin="0.00"     end="30.00"   probability="0.1"     departLane="0" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_45" type="van"     begin="0.00"     end="30.00"   probability="0.016"     departLane="0" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_46" type="truck"   begin="0.00"     end="30.00"   probability="0.0083"     departLane="0" departSpeed="1.00" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_47" type="car"     begin="0.00"     end="30.00"   probability="0.03"     departLane = "0" from="south_middle_road" to="middle_east_road"/>
  
+<!--Peak Time-->
+    <!-- Vehicles from west -->
+    <!-- Lane 2 -->
+    <flow id="f_110" type="bike"     begin="30.00"     end="60.00"    probability="0.6"     departLane="2" from="west_middle_road" to="middle_north_road"/>
+    <flow id="f_111" type="van"      begin="30.00"     end="60.00"    probability="0.1"     departLane="2" from="west_middle_road" to="middle_north_road"/>
+    <flow id="f_112" type="truck"    begin="30.00"     end="60.00"    probability="0.05"     departLane="2" departSpeed="1.00" from="west_middle_road" to="middle_north_road"/>
+    <flow id="f_113" type="car"      begin="30.00"     end="60.00"    probability="0.2"     departLane = "2" from="west_middle_road" to="middle_north_road"/>
+    <!-- Lane 1 -->
+    <flow id="f_114" type="bike"     begin="30.00"     end="60.00"    probability="0.6"     departLane="1" from="west_middle_road" to="middle_east_road"/>
+    <flow id="f_115" type="van"      begin="30.00"     end="60.00"    probability="0.1"     departLane="1" from="west_middle_road" to="middle_east_road"/>
+    <flow id="f_116" type="truck"    begin="30.00"     end="60.00"    probability="0.05"     departLane="1" departSpeed="1.00" from="west_middle_road" to="middle_east_road"/>
+    <flow id="f_117" type="car"      begin="30.00"     end="60.00"    probability="0.2"     departLane = "1" from="west_middle_road" to="middle_east_road"/>
+    <!-- Lane 0 -->
+    <flow id="f_118" type="bike"     begin="30.00"     end="60.00"    probability="0.6"     departLane="0" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_119" type="van"      begin="30.00"     end="60.00"    probability="0.1"     departLane="0" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_1110" type="truck"   begin="30.00"     end="60.00"    probability="0.05"     departLane="0" departSpeed="1.00" from="west_middle_road" to="middle_south_road"/>
+    <flow id="f_1111" type="car"     begin="30.00"     end="60.00"    probability="0.2"     departLane = "0" from="west_middle_road" to="middle_south_road"/>
+    
+
+        <!-- Vehicles from north -->
+    <!-- Lane 2 -->
+    <flow id="f_1112" type="bike"    begin="30.00"     end="60.00"   probability="0.3"      departLane="2" from="north_middle_road" to="middle_east_road"/>
+    <flow id="f_1113" type="van"     begin="30.00"     end="60.00"   probability="0.05"      departLane="2" from="north_middle_road" to="middle_east_road"/>
+    <flow id="f_1114" type="truck"   begin="30.00"     end="60.00"   probability="0.025"      departLane="2" departSpeed="1.00" from="north_middle_road" to="middle_east_road"/>
+    <flow id="f_1115" type="car"     begin="30.00"     end="60.00"   probability="0.1"      departLane = "2" from="north_middle_road" to="middle_east_road"/>
+
+    <!-- Lane 1 -->     
+    <flow id="f_1116" type="bike"    begin="30.00"     end="60.00"   probability="0.3"      departLane="1" from="north_middle_road" to="middle_south_road"/>
+    <flow id="f_1117" type="van"     begin="30.00"     end="60.00"   probability="0.05"      departLane="1" from="north_middle_road" to="middle_south_road"/>
+    <flow id="f_1118" type="truck"   begin="30.00"     end="60.00"   probability="0.025"      departLane="1" departSpeed="1.00" from="north_middle_road" to="middle_south_road"/>
+    <flow id="f_1119" type="car"     begin="30.00"     end="60.00"   probability="0.1"      departLane = "1" from="north_middle_road" to="middle_south_road"/>
+
+    <!-- Lane 0 -->     
+    <flow id="f_2110" type="bike"    begin="30.00"     end="60.00"   probability="0.3"      departLane="0" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_2111" type="van"     begin="30.00"     end="60.00"   probability="0.05"      departLane="0" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_2112" type="truck"   begin="30.00"     end="60.00"   probability="0.025"      departLane="0" departSpeed="1.00" from="north_middle_road" to="middle_west_road"/>
+    <flow id="f_2113" type="car"     begin="30.00"     end="60.00"   probability="0.1"      departLane = "0" from="north_middle_road" to="middle_west_road"/>
+ 
+     <!-- Vehicles from east -->
+    <!-- Lane 2 -->
+    <flow id="f_2114" type="bike"    begin="30.00"     end="60.00"   probability="0.6"      departLane="2" from="east_middle_road" to="middle_south_road"/>
+    <flow id="f_2115" type="van"     begin="30.00"     end="60.00"   probability="0.1"      departLane="2" from="east_middle_road" to="middle_south_road"/>
+    <flow id="f_2116" type="truck"   begin="30.00"     end="60.00"   probability="0.05"      departLane="2" departSpeed="1.00" from="east_middle_road" to="middle_south_road"/>
+    <flow id="f_2117" type="car"     begin="30.00"     end="60.00"   probability="0.2"      departLane = "2" from="east_middle_road" to="middle_south_road"/>
+
+    <!-- Lane 1 -->     
+    <flow id="f_2811" type="bike"    begin="30.00"     end="60.00"   probability="0.6"      departLane="1" from="east_middle_road" to="middle_west_road"/>
+    <flow id="f_2911" type="van"     begin="30.00"     end="60.00"   probability="0.1"      departLane="1" from="east_middle_road" to="middle_west_road"/>
+    <flow id="f_3011" type="truck"   begin="30.00"     end="60.00"   probability="0.05"      departLane="1" departSpeed="1.00" from="east_middle_road" to="middle_west_road"/>
+    <flow id="f_3111" type="car"     begin="30.00"     end="60.00"   probability="0.2"      departLane = "1" from="east_middle_road" to="middle_west_road"/>
+
+    <!-- Lane 0 -->     
+    <flow id="f_3211" type="bike"    begin="30.00"     end="60.00"   probability="0.06"      departLane="0" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_3311" type="van"     begin="30.00"     end="60.00"   probability="0.1"      departLane="0" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_3411" type="truck"   begin="30.00"     end="60.00"   probability="0.05"      departLane="0" departSpeed="1.00" from="east_middle_road" to="middle_north_road"/>
+    <flow id="f_3511" type="car"     begin="30.00"     end="60.00"   probability="0.2"      departLane = "0" from="east_middle_road" to="middle_north_road"/>
+ 
+     <!-- Vehicles from south -->
+    <!-- Lane 2 -->
+    <flow id="f_3116" type="bike"    begin="30.00"     end="60.00"   probability="0.3"     departLane="2" from="south_middle_road" to="middle_west_road"/>
+    <flow id="f_3117" type="van"     begin="30.00"     end="60.00"   probability="0.05"     departLane="2" from="south_middle_road" to="middle_west_road"/>
+    <flow id="f_3118" type="truck"   begin="30.00"     end="60.00"   probability="0.025"     departLane="2" departSpeed="1.00" from="south_middle_road" to="middle_west_road"/>
+    <flow id="f_3119" type="car"     begin="30.00"     end="60.00"   probability="0.1"     departLane = "2" from="south_middle_road" to="middle_west_road"/>
+
+    <!-- Lane 1 --> 
+    <flow id="f_4011" type="bike"    begin="30.00"     end="60.00"   probability="0.3"     departLane="1" from="south_middle_road" to="middle_north_road"/>
+    <flow id="f_4111" type="van"     begin="30.00"     end="60.00"   probability="0.05"     departLane="1" from="south_middle_road" to="middle_north_road"/>
+    <flow id="f_4211" type="truck"   begin="30.00"     end="60.00"   probability="0.025"     departLane="1" departSpeed="1.00" from="south_middle_road" to="middle_north_road"/>
+    <flow id="f_4311" type="car"     begin="30.00"     end="60.00"   probability="0.1"     departLane = "1" from="south_middle_road" to="middle_north_road"/>
+
+    <!-- Lane 0 --> 
+    <flow id="f_4411" type="bike"    begin="30.00"     end="60.00"   probability="0.3"     departLane="0" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_4511" type="van"     begin="30.00"     end="60.00"   probability="0.05"     departLane="0" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_4611" type="truck"   begin="30.00"     end="60.00"   probability="0.025"     departLane="0" departSpeed="1.00" from="south_middle_road" to="middle_east_road"/>
+    <flow id="f_4711" type="car"     begin="30.00"     end="60.00"   probability="0.1"     departLane = "0" from="south_middle_road" to="middle_east_road"/>
+ 
+
 </routes>
