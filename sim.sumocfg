@@ -21,7 +21,7 @@
     </processing>
 
     <gui_only>
-        <delay value="1000"/>
+        <delay value="100"/>
     </gui_only>
 
 </sumoConfiguration>
