@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="net_new.net.xml"/>
-        <route-files value="new.rou.xml"/>
+        <route-files value="real.rou.xml"/>
         <!-- <additional-files value="tls.add.xml"/> -->
         <junction-taz value="true"/>
     </input>
